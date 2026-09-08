@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DIPAS | Readiness Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="logo">
+                🏔️
+            </div>
+
+            <div>
+                <h1>DIPAS</h1>
+                <p>Extreme Environment Readiness Predictor</p>
+            </div>
+
+        </div>
+
+        <div class="nav">
+
+            <span class="online">
+                ● System Online
+            </span>
+
+            <span>AI-Powered</span>
+            <span>Health</span>
+            <span>Safety</span>
+            <span>Performance</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                AI-POWERED ASSESSMENT
+            </div>
+
+            <h2>
+                Know Your Readiness.
+                <br>
+                <span>Before You Go Extreme.</span>
+            </h2>
+
+            <p>
+                Evaluate your physical readiness for challenging
+                environmental conditions using AI-powered analysis.
+            </p>
+
+        </div>
+
+
+        <div class="hero-features">
+
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <strong>Better<br>Preparedness</strong>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">❤️</div>
+                <strong>Health<br>Monitoring</strong>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🧠</div>
+                <strong>AI-Powered<br>Insights</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="dashboard">
+
+
+        <!-- ASSESSMENT -->
+
+        <section class="card assessment-card">
+
+            <div class="card-title">
+
+                <div class="title-icon">
+                    📋
+                </div>
+
+                <div>
+                    <span>ASSESSMENT</span>
+
+                    <h3>Enter Your Details</h3>
+
+                    <p>
+                        Provide the following information to get your readiness score.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="readinessForm">
+
+                <div class="form-grid">
+
+
+                    <!-- AGE -->
+
+                    <div class="input-group">
+
+                        <label for="age">
+                            👤 Age
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="age"
+                                placeholder="Enter your age"
+                                required
+                            >
+
+                            <span>years</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ALTITUDE -->
+
+                    <div class="input-group">
+
+                        <label for="altitude">
+                            ⛰️ Altitude
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="altitude"
+                                placeholder="Enter altitude"
+                                required
+                            >
+
+                            <span>m</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TEMPERATURE -->
+
+                    <div class="input-group">
+
+                        <label for="temperature">
+                            🌡️ Temperature
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="temperature"
+                                placeholder="Enter temperature"
+                                step="0.1"
+                                required
+                            >
+
+                            <span>°C</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HUMIDITY -->
+
+                    <div class="input-group">
+
+                        <label for="humidity">
+                            💧 Humidity
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="humidity"
+                                placeholder="Enter humidity"
+                                step="0.1"
+                                required
+                            >
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SLEEP -->
+
+                    <div class="input-group">
+
+                        <label for="sleep_hours">
+                            😴 Sleep Hours
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="sleep_hours"
+                                placeholder="Enter sleep hours"
+                                step="0.1"
+                                required
+                            >
+
+                            <span>hrs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HEART RATE -->
+
+                    <div class="input-group">
+
+                        <label for="resting_heart_rate">
+                            ❤️ Resting Heart Rate
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="resting_heart_rate"
+                                placeholder="Enter heart rate"
+                                step="0.1"
+                                required
+                            >
+
+                            <span>BPM</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HYDRATION -->
+
+                    <div class="input-group full-width">
+
+                        <label for="hydration_level">
+                            💦 Hydration Level
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="number"
+                                id="hydration_level"
+                                placeholder="Enter hydration level"
+                                step="0.1"
+                                required
+                            >
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="check-button">
+
+                    <span>✦</span>
+
+                    Check My Readiness
+
+                    <span>→</span>
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- RESULT -->
+
+        <section id="result" class="card result-card">
+
+            <div class="result-header">
+
+                <div>
+
+                    <span>✦ ANALYSIS COMPLETE</span>
+
+                    <h3>Your Readiness</h3>
+
+                    <p>
+                        Here's your environmental readiness assessment
+                        based on the provided data.
+                    </p>
+
+                </div>
+
+                <div class="mountain">
+                    🏔️
+                </div>
+
+            </div>
+
+
+            <!-- SCORE AREA -->
+
+            <div class="score-panel">
+
+
+                <!-- CIRCLE -->
+
+                <div class="score-circle">
+
+                    <div class="score-inner">
+
+                        <strong id="score">
+                            --
+                        </strong>
+
+                        <small>
+                            / 100
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SCORE TEXT -->
+
+                <div class="score-details">
+
+                    <span>
+                        ✣ READINESS SCORE
+                    </span>
+
+                    <strong id="score-copy">
+                        --
+                    </strong>
+
+                    <p>
+                        Your current environmental
+                        readiness assessment.
+                    </p>
+
+                </div>
+
+
+                <!-- RISK -->
+
+                <div class="risk-panel">
+
+                    <span>
+                        🛡️ RISK LEVEL
+                    </span>
+
+                    <strong id="risk">
+                        --
+                    </strong>
+
+                    <p>
+                        Based on your current
+                        assessment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECOMMENDATIONS -->
+
+            <div class="recommendations">
+
+                <div class="recommendation-title">
+
+                    <div class="bulb">
+                        💡
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Personalized Recommendations
+                        </h4>
+
+                        <p>
+                            Based on your assessment
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <ul id="recommendations">
+
+                    <li>
+                        Results will appear here.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ERROR -->
+
+    <div id="error" class="error"></div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            DIPAS • Extreme Environment Fitness & Readiness Predictor
+        </p>
+
+        <span>
+            AI-assisted assessment • For informational purposes
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
