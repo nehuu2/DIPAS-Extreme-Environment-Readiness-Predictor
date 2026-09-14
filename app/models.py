@@ -3,8 +3,19 @@ from datetime import datetime
 from sqlmodel import Field, SQLModel
 
 
+class User(SQLModel, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+
+    name: str
+    email: str = Field(index=True)
+
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
 class ReadinessAssessment(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
+
+    user_id: int | None = Field(default=None, foreign_key="user.id")
 
     age: int = Field(gt=0, le=120)
 
